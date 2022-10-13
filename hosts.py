@@ -142,7 +142,10 @@ if __name__ == '__main__':
     re_dict = get_replace_dict()
     for i in re_dict:
         domain_str = domain_str.replace(i, re_dict[i])
-    with open("C:\Windows\System32\drivers\etc\hosts", "w") as f:
-        f.write(domain_str)
+    try:
+        with open("C:\Windows\System32\drivers\etc\hosts", "w") as f:
+            f.write(domain_str)
+    except:
+        print("请鼠标右键此程序 使用管理员身份运行！ ")
     os.system("ipconfig/flushdns")
     os.system("pause")
