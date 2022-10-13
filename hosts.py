@@ -145,7 +145,7 @@ if __name__ == '__main__':
     try:
         with open("C:\Windows\System32\drivers\etc\hosts", "w") as f:
             f.write(domain_str)
+            os.system("ipconfig/flushdns")
     except:
         print("请鼠标右键此程序 使用管理员身份运行！ ")
-    os.system("ipconfig/flushdns")
     os.system("pause")
