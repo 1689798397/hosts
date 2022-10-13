@@ -147,7 +147,7 @@ if __name__ == '__main__':
         with open("C:\Windows\System32\drivers\etc\hosts", "w") as f:
             f.write(domain_str)
             os.system("ipconfig/flushdns")
-            os.system("修改成功！")
+            print("修改成功！")
             print("\n")
     except:
         print("\n")
