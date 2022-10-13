@@ -147,5 +147,6 @@ if __name__ == '__main__':
             f.write(domain_str)
             os.system("ipconfig/flushdns")
     except:
+        print("权限不足，修改失败！")
         print("请鼠标右键此程序 使用管理员身份运行！ ")
     os.system("pause")
