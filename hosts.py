@@ -135,7 +135,6 @@ if __name__ == '__main__':
     print("hosts自动修改 by jack_ma")
     print("开源地址：https://github.com/1689798397/hosts")
     print("\n")
-    print("\n")
     with open("domain.txt", "r") as f:
         domain_list = f.readlines()
     domain_str = ""
@@ -154,4 +153,5 @@ if __name__ == '__main__':
         print("\n")
         print("权限不足，修改失败！")
         print("请鼠标右键此程序 使用管理员身份运行！ ")
+    print("\n")
     os.system("pause")
